@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Song</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="page-song">
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
+  <div class="sparkles" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="logo" href="index.html">Carol at 22</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="question.html">Question</a>
+    </nav>
+  </header>
+
+  <main class="page-shell narrow-shell">
+
+     <!-- 4 PICTURE SECTIONS using your gallery style -->
+    <div class="image-gallery" style="display: flex; gap: 1rem; justify-content: center; margin: 1.5rem 0; flex-wrap: wrap;">
+      <img src="c1.jpeg" alt="Memory 1" style="max-width: 180px; width: 100%; border-radius: 24px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+      <img src="c2.jpeg" alt="Memory 2" style="max-width: 180px; width: 100%; border-radius: 24px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    <img src="c3.jpeg" alt="Memory 3" style="max-width: 180px; width: 100%; border-radius: 24px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+      <img src="c4.jpeg" alt="Memory 4" style="max-width: 180px; width: 100%; border-radius: 24px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    </div>
+
+    
+
+    <section class="hero-card reveal" style="--delay: 0.05s;">
+      <p class="eyebrow">Birthday soundtrack loading</p>
+      <h1>Happy birthday, beautiful girl.</h1>
+      <p class="lead" id="song-status">
+        Your song is about to start. If it takes a moment, the backup button is right below.
+      </p>
+      <div class="music-card">
+        <p>Our special song 🎵</p>
+        <audio id="birthdaySong" controls style="width: 100%; border-radius: 40px;">
+          <source src="carol.mpeg" type="audio/mpeg">
+          Your browser doesn't support audio.
+        </audio>
+        <br>
+        <button onclick="document.getElementById('birthdaySong').play()" class="button button-primary button-large">▶ Play</button>
+        <button onclick="document.getElementById('birthdaySong').pause()" class="button button-primary">⏸ Pause</button>
+      </div>>
+    </section>
+
+   
+    
+  </main>
+</body>
+</html>
